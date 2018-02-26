@@ -1,11 +1,10 @@
 # HealthCheckup
 
-**TODO: Add description**
+Generic health check endpoint for Phoenix/Plug web apps.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `health_checkup` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `health_checkup` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +14,12 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/health_checkup](https://hexdocs.pm/health_checkup).
+## Usage
 
+Add the following to your Phoenix `router.ex` file:
+
+```elixir
+forward "/_some_path", HealthCheckup, resp_body: "Custom response body"`
+```
+
+Note: the default `resp_body` is "Server's Up!"

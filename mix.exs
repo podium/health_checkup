@@ -27,7 +27,7 @@ defmodule HealthCheckup.Mixfile do
     ]
   end
 
-  defp description, do: "Generic health check endpoint for Phoenix web apps."
+  defp description, do: "Generic health check endpoint for Phoenix/Plug web apps."
 
   defp package do
     [
