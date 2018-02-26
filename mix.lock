@@ -1,0 +1,2 @@
+%{"mime": {:hex, :mime, "1.2.0", "78adaa84832b3680de06f88f0997e3ead3b451a440d183d688085be2d709b534", [], [], "hexpm"},
+  "plug": {:hex, :plug, "1.4.5", "7b13869283fff6b8b21b84b8735326cc012c5eef8607095dc6ee24bd0a273d8e", [], [{:cowboy, "~> 1.0.1 or ~> 1.1", [hex: :cowboy, repo: "hexpm", optional: true]}, {:mime, "~> 1.0", [hex: :mime, repo: "hexpm", optional: false]}], "hexpm"}}
